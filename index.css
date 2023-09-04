@@ -1,0 +1,196 @@
+* {padding: 0;
+margin: 0;
+box-sizing: border-box;}
+
+@font-face {font-family: Goaltending;
+src: url(./Fonts/JosefinSans-Regular.ttf);}
+
+body {background-color: black;
+color: darkorange;
+font-family: Goaltending;}
+
+/* *************************************************************************** */
+
+nav {background-color: darkorange;
+color: black;
+height: 10vh;
+display: flex;
+align-items: center;
+justify-content: space-between;}
+
+h1 {margin-left: 5%;}
+
+ul {list-style: none;
+display: flex;
+margin-right: 5%;}
+
+ol {list-style: none;
+display: flex;
+justify-content: center;}
+
+li {margin: 0 10;}
+
+a {text-decoration: none;
+color: black;}
+
+nav ul li {border: 1px solid transparent;
+transition: 0.3s;}
+
+nav ul li:hover {border-bottom: 1px solid black}
+
+/* *************************************************************************** */
+
+.foot {height: 20px;
+margin-left: 50px;}
+
+.social {height: 20px;
+margin-right: 50px;
+margin-bottom: 10px;}
+
+.media {height: 20px;
+margin-right: -10px;}
+
+.space {margin-left: 5;}
+
+.copy {display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 50px;
+font-size: 10px;}
+
+.section1 {height: 60vh;
+background-image: url(./Images/lebron.jpg);
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.section2 {height: 60vh;
+background-image: url(./Images/Curry.jpg);
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;}
+
+section::before {content: "";
+height: 100%;
+width: 100%;
+position: absolute;
+background-color: black;
+opacity: 0.9;}
+
+section * {z-index: 1;
+position: relative;}
+
+.welcome {font-size: 50px;
+text-align: center;
+height: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;}
+
+.goaltending {font-size: 70px;
+text-align: center;}
+
+.subscribe {font-size: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;}
+
+.email {display: flex;
+justify-content: center;
+align-items: center;}
+
+.input {border-radius: 50px;
+border: none;
+background-color: white;
+color: black;
+font-family: goaltending;}
+
+::placeholder {text-align: center;
+    line-height: 100px;}
+
+.button {border-radius: 50px;
+border: none;
+background-color: black;
+color: darkorange;
+font-family: goaltending;
+width: 75px;
+font-size: 12px;}
+
+::placeholder {color: black;
+font-size: 12px;}
+
+span {display: block;
+font-weight: 700;}
+
+.more {position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+bottom: 0;
+margin-bottom: 30px;
+text-align: center;}
+
+.title {display: flex;
+text-align: center;
+justify-content: space-around;
+margin-top: 50px;
+margin-bottom: 50px;
+font-size: 40px};
+
+/* *************************************************************************** */
+
+@media (min-width: 1441px) and (max-width: 2000px) {}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+img {margin-left: 15px;}}
+
+@media (min-width: 769px) and (max-width: 1024px){
+.welcome {font-size: 40px;}
+.goaltending {font-size: 50px;}
+.title {font-size: 25px;}
+img {height: 240px;}
+img {margin-left: 5px;}}
+
+@media (min-width: 426px) and (max-width: 768px){
+.welcome {font-size: 40px;}
+.goaltending {font-size: 50px;}
+.title {font-size: 20px;}
+img {height: 150px;}
+img {margin-left: 5px;}}
+
+@media (min-width: 320px) and (max-width: 425px){
+.up {width: 570px;
+height: 120px;
+flex-direction: column;}
+h1 {margin-top: 25px;
+font-size: 35px;
+height: 50%;}
+ul {font-size: 20px;
+height: 35%;
+margin-left: 5%;}
+hr {width: 570px;}
+.section1 {width: 570px;}
+.welcome {font-size: 25px;}
+.goaltending {font-size: 50px;}
+.title {flex-direction: column;
+margin-top: 15px;
+margin-bottom: 20px;
+width: 570px;}
+h2 {font-size: 35px;
+margin-top: 20px;
+margin-bottom: 20px;}
+img {height: 230px;
+margin-bottom: 15px;}
+.section2 {width: 570px;}
+.down {width: 570px;
+height: 120px;}
+.foot {height: 10px;
+font-size: 20px;}
+.social {height: 10px;}}
